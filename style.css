@@ -1,0 +1,28 @@
+.major{
+    color: blue;
+    background-color: rgb(136, 175, 214); 
+}
+
+.bold{
+    font-weight: bold; 
+}
+
+ul {
+    width: 300px; 
+    background-color: rgb(205, 200, 200);
+    display: flex;
+}
+
+.table {
+    width: 100%; 
+    border: 1px solid #000; 
+}
+
+.table th{
+    background-color: gray;
+    border: 1px solid black;
+}
+.table td{
+    background-color: rgb(174, 196, 228);
+    border: 1px solid black;
+}
