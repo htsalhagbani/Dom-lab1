@@ -27,24 +27,10 @@ for (let i = 1; i <= 3; i++) {
 }
 
 //part5
-let tableBox = document.getElementById('table');//continer
+let tableBox = document.getElementById('table');
 
 let table = document.createElement('table');
 table.className = 'table'; 
-
-let thead = document.createElement('thead');
-let headRow = document.createElement('tr');
-let header = ['H1', 'H2', 'H3'];
-for (let i = 0; i < header.length; i++) {
-    let th = document.createElement('th');
-    th.textContent = header[i];
-    headRow.appendChild(th);
-}
-
-thead.appendChild(headRow);
-table.appendChild(thead);
-
-let tbody = document.createElement('tbody');
 
 for (let i = 1; i <= 2; i++) {
     let row = document.createElement('tr');
@@ -53,8 +39,7 @@ for (let i = 1; i <= 2; i++) {
         td.textContent = `Row+cell :  ${i,j}`;
         row.appendChild(td);
     }
-    tbody.appendChild(row);
+    table.appendChild(row);
 }
 
-table.appendChild(tbody);
 tableBox.appendChild(table);
