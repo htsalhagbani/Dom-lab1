@@ -5,7 +5,8 @@ Myname.style.backgroundColor='gray';
 
 //part2
 let paragraph = document.getElementById('major');
-paragraph.className = 'major bold';
+paragraph.className = 'major';
+paragraph.style.fontWeight='bold';
 
 
 //part3
